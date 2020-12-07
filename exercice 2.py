@@ -35,7 +35,7 @@ def solution1(a,b):
         dp[i]=dp[i-1]+dp[i-2]
     
     for i in range(len(a)):
-    	a[i]=dp[a[i]-1]%(2**b[i])
+    	a[i]=dp[a[i]-1]%(2*b[i])
     return a
 
 print(solution1([4,4,5,5,1],[3,2,4,3,1]))
